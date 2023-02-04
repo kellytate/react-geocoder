@@ -38,14 +38,20 @@ function App() {
   
   return (
     <main>
-      <h1>Get Location Info</h1>
+      <h1>Get Latitude and Longitude</h1>
       <section>
         <LocationForm getInfoCallback={addLocationInfo} />
         
       </section>
-      <p>Results for: {locationData.location}</p>
-      <p>Latitude: {locationData.latitude}</p>
-      <p>Longitude: {locationData.longitude}</p>
+      <h2>Results for: {locationData.location}</h2>
+      <ul>
+        <li>
+        Latitude: {locationData.latitude}
+        </li>
+        <li>
+        Longitude: {locationData.longitude}
+        </li>
+      </ul>
     </main>
   );
 }

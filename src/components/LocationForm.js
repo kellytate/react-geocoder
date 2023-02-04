@@ -19,18 +19,14 @@ const LocationForm = (props) => {
   return (
     <section>
       <form onSubmit={formSubmit}>
-        <h2>Get Location Info</h2>
         <div>
-          <label>Location name:</label>
           <input
             type='text'
             name='location'
             value={formField}
             onChange={handleChange}
             ></input>
-        </div>
-        <div>
-          <input type='submit' value='Get Info'></input>
+          <input type='submit' value='Search Now!'></input>
         </div>
       </form>
     </section>
